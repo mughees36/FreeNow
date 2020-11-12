@@ -1,0 +1,960 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C4011BA2A6BAA3EF8FEC0C1 /* Pods_FreeNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD91742939991E0FECD33A8 /* Pods_FreeNow.framework */; };
+		81DFEFA8BC93D4835D4CAFDB /* Pods_FreeNow_FreeNowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17219F52B0607D0A768E7EE2 /* Pods_FreeNow_FreeNowUITests.framework */; };
+		D6568A969DF25DB8A3033889 /* Pods_FreeNowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAEBB1748C36CE614BEBC69 /* Pods_FreeNowTests.framework */; };
+		F37970F52559515000382584 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37970F42559515000382584 /* AppDelegate.swift */; };
+		F37970F72559515000382584 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37970F62559515000382584 /* SceneDelegate.swift */; };
+		F37970FC2559515000382584 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37970FA2559515000382584 /* Main.storyboard */; };
+		F37970FE2559515700382584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37970FD2559515700382584 /* Assets.xcassets */; };
+		F37971012559515700382584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37970FF2559515700382584 /* LaunchScreen.storyboard */; };
+		F379710C2559515700382584 /* FreeNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379710B2559515700382584 /* FreeNowTests.swift */; };
+		F37971172559515700382584 /* FreeNowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37971162559515700382584 /* FreeNowUITests.swift */; };
+		F3797146255965B800382584 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3797135255965B700382584 /* Constants.swift */; };
+		F3797147255965B800382584 /* NWError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3797137255965B700382584 /* NWError.swift */; };
+		F3797148255965B800382584 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3797138255965B700382584 /* NetworkService.swift */; };
+		F3797149255965B800382584 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3797139255965B700382584 /* Reachability.swift */; };
+		F379714A255965B800382584 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379713A255965B700382584 /* NetworkingConstants.swift */; };
+		F379714D255965B800382584 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379713F255965B700382584 /* UIViewController+Extension.swift */; };
+		F37971542559663500382584 /* PoiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37971532559663500382584 /* PoiList.swift */; };
+		F37971592559687200382584 /* PoiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37971582559687200382584 /* PoiService.swift */; };
+		F379715E25596A9800382584 /* TaxisListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379715D25596A9800382584 /* TaxisListVC.swift */; };
+		F379716725596B6000382584 /* PoiPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379716625596B6000382584 /* PoiPresenter.swift */; };
+		F379717B2559805D00382584 /* CellTaxisList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379717A2559805D00382584 /* CellTaxisList.swift */; };
+		F37971802559B76800382584 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379717F2559B76800382584 /* MainVC.swift */; };
+		F379718A2559BB2300382584 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F37971892559BB2300382584 /* MapVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F37971082559515700382584 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F37970E92559514F00382584 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F37970F02559514F00382584;
+			remoteInfo = FreeNow;
+		};
+		F37971132559515700382584 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F37970E92559514F00382584 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F37970F02559514F00382584;
+			remoteInfo = FreeNow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17219F52B0607D0A768E7EE2 /* Pods_FreeNow_FreeNowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeNow_FreeNowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DFB780E09404ED702382523 /* Pods-FreeNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.release.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.release.xcconfig"; sourceTree = "<group>"; };
+		6AD91742939991E0FECD33A8 /* Pods_FreeNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DE430A58CC15B793FEF860 /* Pods-FreeNowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNowTests.debug.xcconfig"; path = "Target Support Files/Pods-FreeNowTests/Pods-FreeNowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FAEBB1748C36CE614BEBC69 /* Pods_FreeNowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeNowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		932983667788CB3F230411DD /* Pods-FreeNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow.debug.xcconfig"; path = "Target Support Files/Pods-FreeNow/Pods-FreeNow.debug.xcconfig"; sourceTree = "<group>"; };
+		AD273B77B0BEEC2F66BDBCCE /* Pods-FreeNowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNowTests.release.xcconfig"; path = "Target Support Files/Pods-FreeNowTests/Pods-FreeNowTests.release.xcconfig"; sourceTree = "<group>"; };
+		DAF1F3DC393EF1C9303D19B8 /* Pods-FreeNow-FreeNowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow-FreeNowUITests.release.xcconfig"; path = "Target Support Files/Pods-FreeNow-FreeNowUITests/Pods-FreeNow-FreeNowUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F37970F12559514F00382584 /* FreeNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37970F42559515000382584 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F37970F62559515000382584 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F37970FB2559515000382584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F37970FD2559515700382584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F37971002559515700382584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F37971022559515700382584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F37971072559515700382584 /* FreeNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F379710B2559515700382584 /* FreeNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowTests.swift; sourceTree = "<group>"; };
+		F379710D2559515700382584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F37971122559515700382584 /* FreeNowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeNowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37971162559515700382584 /* FreeNowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowUITests.swift; sourceTree = "<group>"; };
+		F37971182559515700382584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3797135255965B700382584 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F3797137255965B700382584 /* NWError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NWError.swift; sourceTree = "<group>"; };
+		F3797138255965B700382584 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F3797139255965B700382584 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F379713A255965B700382584 /* NetworkingConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
+		F379713F255965B700382584 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F37971532559663500382584 /* PoiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiList.swift; sourceTree = "<group>"; };
+		F37971582559687200382584 /* PoiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiService.swift; sourceTree = "<group>"; };
+		F379715D25596A9800382584 /* TaxisListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxisListVC.swift; sourceTree = "<group>"; };
+		F379716625596B6000382584 /* PoiPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiPresenter.swift; sourceTree = "<group>"; };
+		F379717A2559805D00382584 /* CellTaxisList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTaxisList.swift; sourceTree = "<group>"; };
+		F379717F2559B76800382584 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		F37971872559BB2200382584 /* FreeNow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreeNow-Bridging-Header.h"; sourceTree = "<group>"; };
+		F37971882559BB2300382584 /* MapVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		F37971892559BB2300382584 /* MapVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
+		FFFE5E064AC2315976A098DB /* Pods-FreeNow-FreeNowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeNow-FreeNowUITests.debug.xcconfig"; path = "Target Support Files/Pods-FreeNow-FreeNowUITests/Pods-FreeNow-FreeNowUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F37970EE2559514F00382584 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C4011BA2A6BAA3EF8FEC0C1 /* Pods_FreeNow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37971042559515700382584 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6568A969DF25DB8A3033889 /* Pods_FreeNowTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F379710F2559515700382584 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81DFEFA8BC93D4835D4CAFDB /* Pods_FreeNow_FreeNowUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AA48069D8EABAF203D12D0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AD91742939991E0FECD33A8 /* Pods_FreeNow.framework */,
+				17219F52B0607D0A768E7EE2 /* Pods_FreeNow_FreeNowUITests.framework */,
+				8FAEBB1748C36CE614BEBC69 /* Pods_FreeNowTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEF3B73750357CBB6D3CA2AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				932983667788CB3F230411DD /* Pods-FreeNow.debug.xcconfig */,
+				2DFB780E09404ED702382523 /* Pods-FreeNow.release.xcconfig */,
+				FFFE5E064AC2315976A098DB /* Pods-FreeNow-FreeNowUITests.debug.xcconfig */,
+				DAF1F3DC393EF1C9303D19B8 /* Pods-FreeNow-FreeNowUITests.release.xcconfig */,
+				73DE430A58CC15B793FEF860 /* Pods-FreeNowTests.debug.xcconfig */,
+				AD273B77B0BEEC2F66BDBCCE /* Pods-FreeNowTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F37970E82559514F00382584 = {
+			isa = PBXGroup;
+			children = (
+				F37970F32559514F00382584 /* FreeNow */,
+				F379710A2559515700382584 /* FreeNowTests */,
+				F37971152559515700382584 /* FreeNowUITests */,
+				F37970F22559514F00382584 /* Products */,
+				CEF3B73750357CBB6D3CA2AD /* Pods */,
+				0AA48069D8EABAF203D12D0B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F37970F22559514F00382584 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F37970F12559514F00382584 /* FreeNow.app */,
+				F37971072559515700382584 /* FreeNowTests.xctest */,
+				F37971122559515700382584 /* FreeNowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F37970F32559514F00382584 /* FreeNow */ = {
+			isa = PBXGroup;
+			children = (
+				F37971F9255D52BD00382584 /* Storyboards */,
+				F37971F8255D52A100382584 /* AppDelegates */,
+				F3797134255965B700382584 /* Common */,
+				F379713E255965B700382584 /* Extension */,
+				F379713C255965B700382584 /* Model */,
+				F3797136255965B700382584 /* Networking */,
+				F3797131255965B700382584 /* Presenter */,
+				F3797140255965B700382584 /* View */,
+				F37970FD2559515700382584 /* Assets.xcassets */,
+				F37971022559515700382584 /* Info.plist */,
+			);
+			path = FreeNow;
+			sourceTree = "<group>";
+		};
+		F379710A2559515700382584 /* FreeNowTests */ = {
+			isa = PBXGroup;
+			children = (
+				F379710B2559515700382584 /* FreeNowTests.swift */,
+				F379710D2559515700382584 /* Info.plist */,
+			);
+			path = FreeNowTests;
+			sourceTree = "<group>";
+		};
+		F37971152559515700382584 /* FreeNowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F37971162559515700382584 /* FreeNowUITests.swift */,
+				F37971182559515700382584 /* Info.plist */,
+			);
+			path = FreeNowUITests;
+			sourceTree = "<group>";
+		};
+		F3797131255965B700382584 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F379716525596B4B00382584 /* PoiPresenter */,
+			);
+			path = Presenter;
+			sourceTree = SOURCE_ROOT;
+		};
+		F3797134255965B700382584 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F3797135255965B700382584 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = SOURCE_ROOT;
+		};
+		F3797136255965B700382584 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F3797137255965B700382584 /* NWError.swift */,
+				F3797138255965B700382584 /* NetworkService.swift */,
+				F3797139255965B700382584 /* Reachability.swift */,
+				F379713A255965B700382584 /* NetworkingConstants.swift */,
+				F37971582559687200382584 /* PoiService.swift */,
+			);
+			path = Networking;
+			sourceTree = SOURCE_ROOT;
+		};
+		F379713C255965B700382584 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F37971532559663500382584 /* PoiList.swift */,
+			);
+			path = Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		F379713E255965B700382584 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F379713F255965B700382584 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = SOURCE_ROOT;
+		};
+		F3797140255965B700382584 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3797141255965B700382584 /* Cells */,
+				F3797143255965B700382584 /* ViewControllers */,
+			);
+			path = View;
+			sourceTree = SOURCE_ROOT;
+		};
+		F3797141255965B700382584 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F379717A2559805D00382584 /* CellTaxisList.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F3797143255965B700382584 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F37971862559BAF400382584 /* MapVC */,
+				F37971852559BAD400382584 /* TaxisListVC */,
+				F37971842559BAC900382584 /* MainVC */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F379716525596B4B00382584 /* PoiPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				F379716625596B6000382584 /* PoiPresenter.swift */,
+			);
+			path = PoiPresenter;
+			sourceTree = "<group>";
+		};
+		F37971842559BAC900382584 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				F379717F2559B76800382584 /* MainVC.swift */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		F37971852559BAD400382584 /* TaxisListVC */ = {
+			isa = PBXGroup;
+			children = (
+				F379715D25596A9800382584 /* TaxisListVC.swift */,
+			);
+			path = TaxisListVC;
+			sourceTree = "<group>";
+		};
+		F37971862559BAF400382584 /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				F37971882559BB2300382584 /* MapVC.h */,
+				F37971892559BB2300382584 /* MapVC.m */,
+				F37971872559BB2200382584 /* FreeNow-Bridging-Header.h */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
+		F37971F8255D52A100382584 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				F37970F42559515000382584 /* AppDelegate.swift */,
+				F37970F62559515000382584 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		F37971F9255D52BD00382584 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F37970FA2559515000382584 /* Main.storyboard */,
+				F37970FF2559515700382584 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F37970F02559514F00382584 /* FreeNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F379711B2559515800382584 /* Build configuration list for PBXNativeTarget "FreeNow" */;
+			buildPhases = (
+				9A3EB73D2F5A7BD1225B7084 /* [CP] Check Pods Manifest.lock */,
+				F37970ED2559514F00382584 /* Sources */,
+				F37970EE2559514F00382584 /* Frameworks */,
+				F37970EF2559514F00382584 /* Resources */,
+				797EE19BC9B2C6857B5215CC /* [CP] Embed Pods Frameworks */,
+				21226119D92468F91E877437 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreeNow;
+			productName = FreeNow;
+			productReference = F37970F12559514F00382584 /* FreeNow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F37971062559515700382584 /* FreeNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F379711E2559515800382584 /* Build configuration list for PBXNativeTarget "FreeNowTests" */;
+			buildPhases = (
+				C1FD24CC4F3BE0FFBFFEE72F /* [CP] Check Pods Manifest.lock */,
+				F37971032559515700382584 /* Sources */,
+				F37971042559515700382584 /* Frameworks */,
+				F37971052559515700382584 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F37971092559515700382584 /* PBXTargetDependency */,
+			);
+			name = FreeNowTests;
+			productName = FreeNowTests;
+			productReference = F37971072559515700382584 /* FreeNowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F37971112559515700382584 /* FreeNowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F37971212559515800382584 /* Build configuration list for PBXNativeTarget "FreeNowUITests" */;
+			buildPhases = (
+				9D48572F7C5C594067E57B34 /* [CP] Check Pods Manifest.lock */,
+				F379710E2559515700382584 /* Sources */,
+				F379710F2559515700382584 /* Frameworks */,
+				F37971102559515700382584 /* Resources */,
+				F221DB07FD581DA390E7E50A /* [CP] Embed Pods Frameworks */,
+				1BAC75EDF2191F68F8A1BCA9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F37971142559515700382584 /* PBXTargetDependency */,
+			);
+			name = FreeNowUITests;
+			productName = FreeNowUITests;
+			productReference = F37971122559515700382584 /* FreeNowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F37970E92559514F00382584 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					F37970F02559514F00382584 = {
+						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
+					};
+					F37971062559515700382584 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F37970F02559514F00382584;
+					};
+					F37971112559515700382584 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F37970F02559514F00382584;
+					};
+				};
+			};
+			buildConfigurationList = F37970EC2559514F00382584 /* Build configuration list for PBXProject "FreeNow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F37970E82559514F00382584;
+			productRefGroup = F37970F22559514F00382584 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F37970F02559514F00382584 /* FreeNow */,
+				F37971062559515700382584 /* FreeNowTests */,
+				F37971112559515700382584 /* FreeNowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F37970EF2559514F00382584 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37971012559515700382584 /* LaunchScreen.storyboard in Resources */,
+				F37970FE2559515700382584 /* Assets.xcassets in Resources */,
+				F37970FC2559515000382584 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37971052559515700382584 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37971102559515700382584 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BAC75EDF2191F68F8A1BCA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeNow-FreeNowUITests/Pods-FreeNow-FreeNowUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeNow-FreeNowUITests/Pods-FreeNow-FreeNowUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeNow-FreeNowUITests/Pods-FreeNow-FreeNowUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21226119D92468F91E877437 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeNow/Pods-FreeNow-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeNow/Pods-FreeNow-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeNow/Pods-FreeNow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		797EE19BC9B2C6857B5215CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeNow/Pods-FreeNow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeNow/Pods-FreeNow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeNow/Pods-FreeNow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A3EB73D2F5A7BD1225B7084 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreeNow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D48572F7C5C594067E57B34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreeNow-FreeNowUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1FD24CC4F3BE0FFBFFEE72F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreeNowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F221DB07FD581DA390E7E50A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeNow-FreeNowUITests/Pods-FreeNow-FreeNowUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreeNow-FreeNowUITests/Pods-FreeNow-FreeNowUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreeNow-FreeNowUITests/Pods-FreeNow-FreeNowUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F37970ED2559514F00382584 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F379714D255965B800382584 /* UIViewController+Extension.swift in Sources */,
+				F37971802559B76800382584 /* MainVC.swift in Sources */,
+				F379716725596B6000382584 /* PoiPresenter.swift in Sources */,
+				F3797146255965B800382584 /* Constants.swift in Sources */,
+				F379715E25596A9800382584 /* TaxisListVC.swift in Sources */,
+				F37971592559687200382584 /* PoiService.swift in Sources */,
+				F37970F52559515000382584 /* AppDelegate.swift in Sources */,
+				F379717B2559805D00382584 /* CellTaxisList.swift in Sources */,
+				F379718A2559BB2300382584 /* MapVC.m in Sources */,
+				F37970F72559515000382584 /* SceneDelegate.swift in Sources */,
+				F3797147255965B800382584 /* NWError.swift in Sources */,
+				F3797149255965B800382584 /* Reachability.swift in Sources */,
+				F37971542559663500382584 /* PoiList.swift in Sources */,
+				F3797148255965B800382584 /* NetworkService.swift in Sources */,
+				F379714A255965B800382584 /* NetworkingConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37971032559515700382584 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F379710C2559515700382584 /* FreeNowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F379710E2559515700382584 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37971172559515700382584 /* FreeNowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F37971092559515700382584 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F37970F02559514F00382584 /* FreeNow */;
+			targetProxy = F37971082559515700382584 /* PBXContainerItemProxy */;
+		};
+		F37971142559515700382584 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F37970F02559514F00382584 /* FreeNow */;
+			targetProxy = F37971132559515700382584 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F37970FA2559515000382584 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F37970FB2559515000382584 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F37970FF2559515700382584 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F37971002559515700382584 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F37971192559515800382584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F379711A2559515800382584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F379711C2559515800382584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 932983667788CB3F230411DD /* Pods-FreeNow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 5Q886TNJ64;
+				INFOPLIST_FILE = FreeNow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mughees.FreeNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "View/ViewControllers/MapVC/FreeNow-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F379711D2559515800382584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DFB780E09404ED702382523 /* Pods-FreeNow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 5Q886TNJ64;
+				INFOPLIST_FILE = FreeNow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mughees.FreeNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "View/ViewControllers/MapVC/FreeNow-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F379711F2559515800382584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DE430A58CC15B793FEF860 /* Pods-FreeNowTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q886TNJ64;
+				INFOPLIST_FILE = FreeNowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mughees.FreeNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeNow.app/FreeNow";
+			};
+			name = Debug;
+		};
+		F37971202559515800382584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD273B77B0BEEC2F66BDBCCE /* Pods-FreeNowTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q886TNJ64;
+				INFOPLIST_FILE = FreeNowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mughees.FreeNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeNow.app/FreeNow";
+			};
+			name = Release;
+		};
+		F37971222559515800382584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFE5E064AC2315976A098DB /* Pods-FreeNow-FreeNowUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q886TNJ64;
+				INFOPLIST_FILE = FreeNowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mughees.FreeNowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FreeNow;
+			};
+			name = Debug;
+		};
+		F37971232559515800382584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF1F3DC393EF1C9303D19B8 /* Pods-FreeNow-FreeNowUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q886TNJ64;
+				INFOPLIST_FILE = FreeNowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mughees.FreeNowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FreeNow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F37970EC2559514F00382584 /* Build configuration list for PBXProject "FreeNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37971192559515800382584 /* Debug */,
+				F379711A2559515800382584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F379711B2559515800382584 /* Build configuration list for PBXNativeTarget "FreeNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F379711C2559515800382584 /* Debug */,
+				F379711D2559515800382584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F379711E2559515800382584 /* Build configuration list for PBXNativeTarget "FreeNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F379711F2559515800382584 /* Debug */,
+				F37971202559515800382584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F37971212559515800382584 /* Build configuration list for PBXNativeTarget "FreeNowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37971222559515800382584 /* Debug */,
+				F37971232559515800382584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F37970E92559514F00382584 /* Project object */;
+}
